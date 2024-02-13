@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="stylesheet" href="/static/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<div class="navLeft">
+				<a href="/">Créé article</a>
+			</div>
+			<div class="navRight">
+				<a href="/liste">Listes articles</a>
+			</div>
+		</nav>
+		<h1>Détail article</h1>
+
+		<h2>{{ article.nom }}</h2>
+		<p>
+			{{article.author}}
+		</p>
+		<p>{{ article.description }}</p>
+	</body>
+</html>

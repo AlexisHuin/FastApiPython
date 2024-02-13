@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="stylesheet" href="/static/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<div class="navLeft">
+				<a href="/">Créé article</a>
+			</div>
+			<div class="navRight">
+				<a href="./liste">Listes articles</a>
+			</div>
+		</nav>
+		<h1>Créé article</h1>
+		<form method="POST" class="formArticle" action="/article">
+
+			<label for="nom">Nom de l'article</label>
+			<input type="text" name="nom">
+			<label for="auhtor">Auteur</label>
+			<input type="text" name="author">
+			<label for="description">Description</label>
+			<input type="text" name="description">
+			<button type="submit">Valider</button>
+		</form>
+	</body>
+</html>

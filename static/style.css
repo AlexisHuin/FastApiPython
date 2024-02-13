@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(190, 208, 212);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.block {
+  border: 1px solid black;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 2em;
+  background-color: blue;
+  font-size: 2rem;
+  color: white;
+}
+
+.formArticle {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+input {
+  padding: 2em;
+  margin: 1em 0 1em 0;
+}
+
+button {
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.navLeft {
+  flex: 1;
+  background-color: burlywood;
+  border: 1px solid black;
+  text-decoration: none;
+}
+.navRight {
+  flex: 1;
+  background-color: burlywood;
+  border: 1px solid black;
+  text-decoration: none;
+}
