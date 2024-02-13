@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copiez le fichier requirements.txt et installez les dépendances
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt && apt-get update && apt-get install sqlite3
 
 # Copiez le reste des fichiers de l'application dans le conteneur
 COPY . .

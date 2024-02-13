@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="/static/style.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
+		<title>Liste des articles</title>
 	</head>
 	<body>
 		<nav>
@@ -15,15 +15,21 @@
 				<a href="/liste">Listes articles</a>
 			</div>
 		</nav>
-		<h1>Liste des articles</h1>
+		<h1 style="margin-top: 1em;">Liste des articles</h1>
+		
 		<div class="container">
-
+			<img src="./static/sonic.jpg" alt="sonic">
 			{% for article in list %}
-				<a href="/blog/{{article.id}}">
-					<div class="block">
-						<p>{{article.nom}}</p>
-					</div>
-				</a>
+				<div>
+					<form action="/delete/{{ article.id }}" method="post">
+						<button class="deleteForm" type="submit">X</button>
+					</form>
+					<a href="/blog/{{article.id}}">
+						<div class="block">
+							<p>{{article.nom}}</p>
+						</div>
+					</a>
+				</div>
 			{% endfor %}
 		</div>
 	</body>

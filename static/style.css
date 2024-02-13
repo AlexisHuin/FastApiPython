@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgb(190, 208, 212);
 }
@@ -6,24 +11,38 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2em;
 }
-
+img {
+  width: 20%;
+}
 .block {
   border: 1px solid black;
-  padding: 2em;
-  margin: 2em;
+  padding: 1em;
+  margin: 1em;
   border-radius: 2em;
-  background-color: blue;
+  background-color: #2b3f98;
   font-size: 2rem;
-  color: white;
+  color: rgb(242, 255, 0);
+
 }
 
+.block:hover {
+  transition: 0.5s;
+  background-color: rgb(89, 141, 220);
+  box-shadow: 5px 2px 2px blue;
+  color: black;
+}
 .formArticle {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  align-items: center;
 }
 
+h1 {
+text-align: center;
+}
 input {
   padding: 2em;
   margin: 1em 0 1em 0;
@@ -36,6 +55,7 @@ button {
 nav {
   display: flex;
   text-align: center;
+ 
 }
 
 a {
@@ -44,13 +64,27 @@ a {
 }
 .navLeft {
   flex: 1;
-  background-color: burlywood;
+  background-color: #99b93c;
   border: 1px solid black;
   text-decoration: none;
+  padding: 1em;
 }
 .navRight {
   flex: 1;
-  background-color: burlywood;
+  background-color: #99b93c;
   border: 1px solid black;
   text-decoration: none;
+  padding: 1em;
+}
+
+.deleteForm {
+  background-color: #eb1c24;
+  border-radius: 50%;
+  color: white;
+  font-size: 1em;
+}
+
+.detail {
+  background-color: cadetblue;
+  padding: 5em;
 }
